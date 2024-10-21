@@ -1,7 +1,6 @@
 /*****************************
-* 020 - Fonctions - Préalable
-*/
-
+ * 020 - Fonctions - Préalable
+ */
 // 4. PASSAGE DE PARAMÈTRE : FONCTION AVEC PARAMÈTRE (SANS RETURN)
 
 // 1°) Fonctions sans paramètre (pour comprendre l'utilité du paramètre) :
@@ -36,3 +35,25 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+
+
+// EXERCICE 1
+
+function double3() {
+    console.log(`Le double de 3 est`)
+}
+
+double3();
+
+
+// EXERCICE 2
+
+
+function double(nombre = parseFloat(prompt("Entrez un nombre pour calculer son double"))) {
+    for (;isNaN(nombre);) {
+        nombre = parseFloat(prompt("Entrez un NOMBRE pour calculer son double"));
+    }
+    console.log(`le double de ${nombre} est ${nombre*2}`);
+}
+
+double();

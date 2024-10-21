@@ -20,10 +20,13 @@
 
 // Fonction anonyme avec la syntaxe "fat arrow function"
 
+const bonjour1 = (prenom) => {
+    console.log(`Bonjour ${prenom}`);
+}
+
 // Utilisation de la fonction pour saluer Thomas dans la console
 
-
-
+bonjour1('Thomas');
 /*
 N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions fléchées :
 - Quand le corps de la fonction se limite à une seule ligne,
@@ -39,6 +42,8 @@ N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions
 
 // Fonction anonyme avec la syntaxe simplifiée
 
+const bonjour2 = prenom => `Bonjour ${prenom}!`;
 
 // Utilisation de la fonction pour saluer Thomas dans la console
 
+console.log(bonjour2('Thomas'));

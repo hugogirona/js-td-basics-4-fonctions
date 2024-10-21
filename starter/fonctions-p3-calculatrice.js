@@ -13,7 +13,30 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 */
 
 // Déclaration de la fonction calculer
-
+const calculer = function (nbre1, operation, nbre2) {
+    let result;
+    switch (operation) {
+        case '+' :
+            result = nbre1 + nbre2;
+            break;
+        case '-' :
+            result = nbre1 - nbre2;
+            break;
+        case '*' :
+            result = nbre1 * nbre2;
+            break;
+        case '/' :
+            (nbre1 === 0 || nbre2 === 0) ? result = 'Infinity' : result = nbre1 / nbre2;
+            break;
+        default :
+            result = "Opération invalide";
+    }
+    return result;
+}
 
 // Utilisation de la fonction calculer
 
+console.log(calculer(4,'+',6));
+console.log(calculer(4,'-',6));
+console.log(calculer(2,'*',0));
+console.log(calculer(12,'/',0));

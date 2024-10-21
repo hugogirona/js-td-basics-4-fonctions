@@ -13,18 +13,31 @@ N.B. Faites deux versions :
 */
 
 // Syntaxe classique
-
+calculMin = function (x, y) {
+    if (x <= y) {
+        console.log(x);
+    } else {
+        console.log(y);
+    }
+}
 
 // Utilisation de la fonction calcMin pour calculer le minimum
-
+calculMin(10, 5);
 
 // Version avec une arrow function
-
+const calcMinArrow = (x, y) => {
+    if (x <= y) {
+        console.log(x);
+    }else{
+        console.log(y);
+    }
+}
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
-
+calcMinArrow(14, 7);
 
 // Version encore plus concise avec une arrow function
-const calcMinConcise = (a, b) => (a < b) ? a : b;
+const calcMinConcise = (a, b) => (a < b) ? console.log(a): console.log(b);
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
 
+calcMinConcise(10, 12);
